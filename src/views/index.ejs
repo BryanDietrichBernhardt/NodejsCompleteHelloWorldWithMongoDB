@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <%- include('./partials/head.ejs')%>
+  <body>
+    <div class="container">
+      <h1>NodeJS API</h1>
+      <p>Manipulação de dados salvos no MongoDB para fins de estudo.</p>
+      <h2>Endpoints:</h2>
+      <div class="content">
+        <table>
+          <tr>
+            <th>Endpoint</th>
+            <th>Action</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>/users</td>
+            <td>GET</td>
+            <td>Get all users</td>
+          </tr>
+          <tr>
+            <td>/users/id</td>
+            <td>GET</td>
+            <td>Get user by id</td>
+          </tr>
+          <tr>
+            <td>/users</td>
+            <td>POST</td>
+            <td>Create new user</td>
+          </tr>
+          <tr>
+            <td>/users/id</td>
+            <td>PUT</td>
+            <td>Edit user parameters</td>
+          </tr>
+          <tr>
+            <td>/users/id</td>
+            <td>PATCH</td>
+            <td>Change user email</td>
+          </tr>
+          <tr>
+            <td>/users/id</td>
+            <td>DEL</td>
+            <td>Delete user</td>
+          </tr>
+          <tr>
+            <td><a href="/views/users">/views/users</a></td>
+            <td>GET</td>
+            <td>Users page</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
